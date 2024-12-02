@@ -13,7 +13,7 @@ class TripItem(models.Model):
         return f"{self.trip_name}: due {self.date}"
 
 
-class UserModel(models.Model) :
+class userModel(models.Model) :
     username = models.CharField(max_length=15)
     password = models.CharField(max_length=100)
     salt = models.CharField(max_length=100)
